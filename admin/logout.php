@@ -1,0 +1,1 @@
+<?phpsession_name('kAdmin');session_save_path('../tmp');session_start();unset($_SESSION['user']);session_destroy();header("Location: index.php");?>

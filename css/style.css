@@ -1,0 +1,866 @@
+@font-face {
+
+    font-family: 'BYekan';
+
+    src: url('../fonts/BYekan.eot');
+
+    src: url('../fonts/BYekan.eot#iefix') format('embedded-opentype'),
+    url('../fonts/BYekan.woff') format('woff'),
+    url('../fonts/BYekan.ttf') format('truetype'),
+    url('../fonts/BYekan.svg#CartoGothicStdBook') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: 'BTraffic';
+
+    src: url('../fonts/BTraffic.eot?#') format('eot'), /* IE6–8 */ url('../fonts/BTraffic.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/BTraffic.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+
+}
+
+@font-face {
+
+    font-family: 'BSinaBold';
+
+    src: url('../fonts/BSinaBold.eot?#') format('eot'), /* IE6–8 */ url('../fonts/BSinaBold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/BSinaBold.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+
+}
+
+@font-face {
+
+    font-family: 'BNazanin';
+
+    src: url('../fonts/BNazanin.eot?#') format('eot'), /* IE6–8 */ url('../fonts/BNazanin.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/BNazanin.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+
+}
+
+html, body {
+
+    background-color: #eee;
+
+}
+
+body {
+
+    font-family: BYekan;
+
+    padding-top: 40px;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+
+    font-weight: normal;
+
+    font-style: normal;
+
+    font-size: 13px;
+
+    line-height: 1;
+
+    font-family: "BTraffic";
+
+}
+
+.printing {
+
+    font-family: Byekan;
+
+    margin: 20px 0 60px 0;
+
+    font-size: 16px;
+
+    tex
+
+}
+
+.credit {
+
+    float: left;
+
+    font-size: 14px;
+
+    color: #0D0389;
+
+    font-family: BYekan;
+
+}
+
+.printing br {
+
+    content: "A" !important;
+
+    display: block !important;
+
+    margin-bottom: .7em !important;
+
+}
+
+.printdiv {
+
+    margin-right: 30px;
+
+}
+
+.tablePrint {
+
+    float: right;
+
+    width: 100%;
+
+    text-align: right;
+
+    direction: rtl;
+
+}
+
+.center {
+
+    text-align: center;
+
+}
+
+.left {
+
+    text-align: left;
+
+}
+
+.borderless {
+
+    border: hidden;
+
+}
+
+.tablePrint td {
+
+    padding: 3px 3px;
+
+    border-bottom: solid 1px #000000;
+
+    border-right: solid 1px #000000;
+
+}
+
+.bleft {
+
+    border-left: solid 1px #000000;
+
+}
+
+.bright {
+
+    border-right: solid 1px #000000;
+
+}
+
+.btop {
+
+    border-top: solid 1px #000000;
+
+}
+
+.printTitr {
+
+    font-size: 15px;
+
+}
+
+#printDiv {
+
+    display: none;
+
+    margin: 0;
+
+}
+
+footer p {
+
+    text-align: center; /* center align it with the container */
+
+}
+
+.jumbotron {
+
+    background-color: #fff;
+
+    padding: 20px;
+
+    -webkit-border-radius: 0 0 6px 6px;
+
+    -moz-border-radius: 0 0 6px 6px;
+
+    border-radius: 0 0 6px 6px;
+
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+
+}
+
+/* The white background content wrapper */
+
+.container > .content {
+
+    background-color: #fff;
+
+    padding: 20px;
+
+    margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+
+    -webkit-border-radius: 0 0 6px 6px;
+
+    -moz-border-radius: 0 0 6px 6px;
+
+    border-radius: 0 0 6px 6px;
+
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+
+}
+
+/* Page header tweaks */
+
+.page-header {
+
+    background-color: #f5f5f5;
+
+    padding: 20px 20px 10px;
+
+    margin: -20px -20px 20px -20px;
+
+}
+
+@media (min-width: 768px) {
+
+    .page-header {
+
+        margin: -20px -60px 20px -60px;
+
+    }
+
+}
+
+/* Styles you shouldn't keep as they are for displaying this base example only */
+
+.content .span10, .content .span4 {
+
+    min-height: 500px;
+
+}
+
+/* Give a quick and non-cross-browser friendly divider */
+
+.content .span4 {
+
+    margin-left: 0;
+
+    padding-left: 19px;
+
+    border-left: 1px solid #eee;
+
+}
+
+.ValidationErrors {
+
+    color: red;
+
+}
+
+.itemName {
+
+    width: 200px;
+
+    float: right;
+
+}
+
+.itemQuantity {
+
+    width: 30px;
+
+    float: right;
+
+}
+
+.itemPrice {
+
+    width: 100px;
+
+    float: right;
+
+}
+
+.itemUnit {
+
+    width: 60px;
+
+    float: right;
+
+}
+
+.itemButton {
+
+    width: 60px;
+
+    float: right;
+
+    margin-right: 8px;
+
+}
+
+span.itemName {
+
+    width: 200px;
+
+    float: right;
+
+    margin: 0 10px 5px 0;
+
+    font-weight: bold;
+
+}
+
+span.itemQuantity {
+
+    width: 30px;
+
+    float: right;
+
+    margin: 0 10px 5px 0;
+
+    font-weight: bold;
+
+}
+
+span.itemUnit {
+
+    width: 50px;
+
+    float: right;
+
+    margin: 0 10px 5px 0;
+
+    font-weight: bold;
+
+}
+
+span.itemPrice {
+
+    width: 100px;
+
+    float: right;
+
+    margin: 0 20px 5px 0;
+
+    font-weight: bold;
+
+}
+
+div.itemName {
+
+    width: 200px;
+
+    float: right;
+
+    margin: 0 10px 5px 0;
+
+}
+
+div.itemQuantity {
+
+    width: 30px;
+
+    float: right;
+
+    margin: 0 10px 5px 0;
+
+}
+
+div.itemPrice {
+
+    width: 100px;
+
+    float: right;
+
+    margin: 0 11px 5px 0;
+
+}
+
+.invoiceItems {
+
+    float: right;
+
+}
+
+.itemRow {
+
+    padding: 2px;
+
+    border-top: 1px solid;
+
+    float: right;
+
+}
+
+.main_view {
+
+    float: right;
+
+    width: 400px;
+
+    margin: 20px 0 20px 0;
+
+}
+
+.row_view {
+
+    float: right;
+
+    width: 100%;
+
+    min-height: 30px;
+
+}
+
+.label_view {
+
+    font-family: "BTraffic";
+
+    float: right;
+
+    width: 200px;
+
+    text-align: right;
+
+}
+
+.value_view {
+
+    font-family: "BTraffic";
+
+    float: right;
+
+    width: 200px;
+
+    text-align: right;
+
+}
+
+.totalRow {
+    font-family: Byekan;
+    font-size: 15px;
+    margin: 0 25px;
+    min-width: 250px !important;
+}
+
+.blue {
+
+    color: #0211C4;
+
+}
+
+.red {
+
+    color: indianred;
+
+}
+
+.green {
+
+    color: #090;
+
+}
+
+.font-xs {
+
+    font-size: 12px !important;
+
+}
+
+.formInput_view {
+
+    padding-top: 5px;
+
+}
+
+.navbar-default {
+
+    background-image: none;
+
+    background-color: #3b5998;
+
+    color: #ffffff;
+
+}
+
+.navbar-default .navbar-nav > .active > a {
+
+    background-color: #627aad !important;
+
+    color: #ffffff;
+
+    background-image: none;
+
+}
+
+.navbar-default .navbar-nav > a:hover {
+
+    background-color: #627aad !important;
+
+    color: red;
+
+    background-image: none;
+
+}
+
+a.navbar-brand {
+
+    color: #ffffff !important;
+
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+    font-size: 22px;
+
+    text-decoration: none;
+
+}
+
+.navbar-nav li a {
+
+    color: #ffffff !important;
+
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+
+    background-color: #627aad !important;
+
+}
+
+.navbar-default .navbar-nav > a:hover {
+
+    background-color: #627aad !important;
+
+}
+
+span.icon-bar {
+
+    background-color: #ffffff !important;
+
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+
+    background-color: #627aad;
+
+    color: #ddd !important;
+
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a {
+
+    background-color: #3b5998;
+
+    color: #ddd;
+
+}
+
+.navbar-nav {
+
+    margin: 0;
+
+}
+
+.showcredit a {
+
+    font-family: BYekan;
+
+    font-size: 16px;
+
+    font-weight: normal;
+
+    text-decoration: none;
+
+    min-width: 60px;
+
+}
+
+@media (max-width: 988px) {
+
+    .showcredit a {
+
+        font-size: 9px;
+
+    }
+
+}
+
+@media (min-width: 800px) {
+
+    .inputsize {
+
+        width: 250px;
+
+    }
+
+}
+
+.inputsize {
+
+    font-family: BYekan;
+
+}
+
+.page-header h1 {
+
+    font-size: 24px;
+
+    font-weight: normal;
+
+    font-family: BYekan;
+
+}
+.titleA {
+
+    font-size: 24px;
+    font-weight: normal;
+    text-decoration: none;
+    font-family: BYekan;
+    color: #000000;
+
+}
+.titleA:hover{
+
+    color: #000000;
+
+}
+.span18 h2 {
+
+    font-size: 16px;
+
+    font-weight: normal;
+
+    font-family: BYekan;
+
+}
+
+.dash-grid a {
+
+    float: right;
+
+    padding: 4px;
+
+    border: 1px solid #ddd;
+
+    -webkit-border-radius: 4px;
+
+    -moz-border-radius: 4px;
+
+    border-radius: 4px;
+
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+
+    width: 100%;
+
+    height: 140px;
+
+    margin: 5px;
+
+}
+
+.dash-grid a img {
+
+    display: block;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    margin-top: 10px;
+
+    border: none !important;
+
+    text-align: center;
+
+}
+
+.dash-grid p {
+
+    text-align: center;
+
+    float: right;
+
+    font-size: 18px;
+
+    font-family: Byekan;
+
+    color: #6A2673;
+
+    width: 100%;
+
+}
+
+.dash-grid a:hover {
+
+    border-color: #3b5998;
+
+    -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+
+    -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+
+    box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+
+}
+
+.btn {
+
+    font-family: BYekan;
+
+}
+
+.actions {
+
+    background-color: #F9F9F9;
+
+    padding: 10px 0;
+
+}
+
+.alert {
+
+    font-family: BYekan;
+
+    font-size: 13px;
+
+}
+
+.loginheader {
+
+    font-size: 28px;
+
+    color: #ffffff;
+
+    font-family: BYekan;
+
+    padding-top: 8px;
+
+}
+
+@media (max-width: 800px) {
+
+    .loginheader {
+
+        font-size: 20px;
+
+    }
+
+}
+
+.pad10 {
+
+    height: 10px;
+
+    width: 100%;
+
+}
+
+.viewtext dt {
+
+    font-family: BYekan;
+
+    font-size: 14px;
+
+    padding: 6px 20px;
+
+}
+
+.viewtext dd {
+
+    font-family: BYekan !important;
+
+    font-size: 14px;
+
+    padding: 6px 20px;
+
+}
+
+td > a > img {
+
+    padding: 4px 0;
+
+}
+
+div.actions > button {
+
+    margin-bottom: 8px !important;
+
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: BYekan;
+    padding: 0 30px 20px 0;
+}
